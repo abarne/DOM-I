@@ -55,3 +55,71 @@ nav1[2].innerHTML = siteContent['nav']['nav-item-3'];
 nav1[3].innerHTML = siteContent['nav']['nav-item-4'];
 nav1[4].innerHTML = siteContent['nav']['nav-item-5'];
 nav1[5].innerHTML = siteContent['nav']['nav-item-6'];
+
+// *************main section***********
+
+let mainDomAwesome = document.querySelector('.cta-text');
+mainDomAwesome.getElementsByTagName('h1')[0].innerHTML = 'Dom<br> Is<br> Awesome';
+mainDomAwesome.getElementsByTagName('button')[0].innerHTML = 'Get Started';
+
+let ctaImg = document.getElementById('cta-img');
+ctaImg.setAttribute('src', siteContent['cta']['img-src']);
+
+let textContent = document.getElementsByClassName('text-content');
+
+textContent[0].getElementsByTagName('h4')[0].innerHTML = siteContent['main-content']['features-h4'];
+
+textContent[0].getElementsByTagName('p')[0].innerHTML = siteContent['main-content']['features-content'];
+
+textContent[1].getElementsByTagName('h4')[0].innerHTML = siteContent['main-content']['about-h4'];
+
+textContent[1].getElementsByTagName('p')[0].innerHTML = siteContent['main-content']['about-content'];
+
+let aboutImg = document.getElementById('middle-img');
+aboutImg.setAttribute('src', siteContent['main-content']['middle-img-src']);
+
+textContent[2].getElementsByTagName('h4')[0].innerHTML = siteContent['main-content']['services-h4'];
+
+textContent[2].getElementsByTagName('p')[0].innerHTML = siteContent['main-content']['services-content'];
+
+textContent[3].getElementsByTagName('h4')[0].innerHTML = siteContent['main-content']['product-h4'];
+
+textContent[3].getElementsByTagName('p')[0].innerHTML = siteContent['main-content']['product-content'];
+
+textContent[4].getElementsByTagName('h4')[0].innerHTML = siteContent['main-content']['vision-h4'];
+
+textContent[4].getElementsByTagName('p')[0].innerHTML = siteContent['main-content']['vision-content'];
+
+let Contact = document.querySelector('.contact');
+Contact.getElementsByTagName('h4')[0].innerHTML = siteContent['contact']['contact-h4'];
+Contact.getElementsByTagName('p')[0].innerHTML = siteContent['contact']['address'];
+Contact.getElementsByTagName('p')[1].innerHTML = siteContent['contact']['phone'];
+Contact.getElementsByTagName('p')[2].innerHTML = siteContent['contact']['email'];
+
+let Footer = document.getElementsByTagName('footer')[0];
+Footer.getElementsByTagName('p')[0].innerHTML = siteContent['footer']['copyright'];
+
+nav1[0].style.color = 'green';
+nav1[1].style.color = 'green';
+nav1[2].style.color = 'green';
+nav1[3].style.color = 'green';
+nav1[4].style.color = 'green';
+nav1[5].style.color = 'green';
+
+// nav1.forEach((element) => {
+// 	element.style.color = 'green';
+// });
+
+let newA1 = document.createElement('a');
+newA1.textContent = 'Team';
+newA1.style.color = 'green';
+
+let newElement = document.querySelector('nav');
+
+newElement.append(newA1);
+
+let newA2 = document.createElement('a');
+newA2.textContent = 'New Page';
+newA2.style.color = 'green';
+
+newElement.append(newA2);
